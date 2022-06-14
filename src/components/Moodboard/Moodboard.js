@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import { Container, Grow, Grid } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 
 import Posts from '../Moodboard/Posts/Posts';
 import Form from '../Moodboard/Form/Form';
 import Navbar from './Navbar/Navbar';
 import { getPosts } from '../../actions/posts';
-import useStyles from './styles';
-import memories from '../../Images/memories.png';
+
+
 
 const Moodboard = () => {
   const [currentId, setCurrentId] = useState(0);
   const dispatch = useDispatch();
-  const classes = useStyles();
+ 
 
   useEffect(() => {
     dispatch(getPosts());
