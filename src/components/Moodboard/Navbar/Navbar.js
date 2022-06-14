@@ -4,7 +4,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
-import memories from '../../../Images/memories.png';
+
 import * as actionType from '../../../constants/actionTypes';
 import useStyles from './styles';
 
