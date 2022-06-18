@@ -14,6 +14,7 @@ import img2 from '../../Images/folder.png';
 import ReactWhatsapp from '../../../node_modules/react-whatsapp';
 import courseData from "./../../data/fakeCourses.json"
 
+
 const SingleCourse = () => {
   const onPlayerReady  = (event) => {
     // access to player in all event handlers via event.target
@@ -36,6 +37,7 @@ const SingleCourse = () => {
     const findMatch = courseData.find(single => parseInt(id) === single.id);
     // destruture match course
     const { title,institute, rating, totalRate, lebel, price, description,videoId, payLink, review1, review2, review3, review4, uname1, uname2, uname3, uname4, uimg1, uimg2, uimg3, uimg4} = findMatch; 
+   
                                                    
     return (
    
@@ -49,7 +51,7 @@ const SingleCourse = () => {
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom:"20px",marginTop:"20px",  border: "2px solid red" }}> 
             <YouTube videoId={videoId} opts={opts} onReady={onPlayerReady} />
             </div>
-            <ReactWhatsapp number="+918260255206" message="Hi I want for info about your course !"><button className='btn btn-primary px-5 py-3 me-2'>For course details chat with our team</button></ReactWhatsapp>
+          
             </div>
            
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom:"20px"}}>  
@@ -78,8 +80,7 @@ const SingleCourse = () => {
                     
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
              
-                <a style={{background: '#99e6ff', color:'buttontext',width:'100px', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui'}} href={payLink}>Buy Now</a>
-                
+                <a style={{background: '#8dff87', color:'buttontext',width:'100px', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui',borderRadius:'10px',textDecoration:'none'}} href={payLink}>Buy Now</a>
                 
                 </div>
                 </div>
@@ -136,10 +137,14 @@ const SingleCourse = () => {
 
 
     </div>
+    
     </div>
     </div>
     </div>
     <section className='container'>
+      <div className="shadow-lg p-3 mb-5 mx-5 bg-white rounded m-10">
+      <ReactWhatsapp number="+918260255206" message="Hi I want for info about your course ! "><button className='btn  px-3 py-3 me-1'><img src="https://img.icons8.com/dotty/30/undefined/whatsapp.png" alt="iconCart"/>Chart with our Team</button></ReactWhatsapp>
+      </div>
     
     
     <div className="row">
