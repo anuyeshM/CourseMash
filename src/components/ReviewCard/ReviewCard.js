@@ -68,7 +68,7 @@ const findMatch = courseData.find((single) => parseInt(id) === single.id);
       <div className="img-container">
         <img src={image} alt={props.uname1} className="person-img" />
         <span className="quote-icon">
-          <FaQuoteRight />
+        
         </span>
       </div>
       <h4 className="author">{props.uname1}</h4>
