@@ -19,7 +19,7 @@ import { createContext, useEffect, useState } from "react";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import courseData from "./data/fakeCourses.json";
 import ReactGa from "../node_modules/react-ga";
-import ParticleBackground from "../src/components/BackgroundMotion/particleBackground";
+
 
 // import {  googleAnalyticsActions} from './utils/google-analytics/google-analytics-init'
 // import { webVitalActions} from './utils/google-analytics/google-analytics-get-web-vitals'
@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <div className="app">
-        {/* <ParticleBackground/> */}
+      
 
         {loading ? (
           <div style={{
