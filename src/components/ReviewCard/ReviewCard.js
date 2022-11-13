@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import people from "./data";
-import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
+
 import "./style.css";
 import courseData from "./../../data/fakeCourses.json";
 const Review = (props) => {
