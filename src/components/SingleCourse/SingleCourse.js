@@ -9,7 +9,7 @@ import StarRatings from "react-star-ratings";
 import img from "../../Images/certificate (1).png";
 import img1 from "../../Images/video.png";
 import img2 from "../../Images/folder.png";
-import ReactWhatsapp from "../../../node_modules/react-whatsapp";
+
 import courseData from "./../../data/fakeCourses.json";
 import Review from "../ReviewCard/ReviewCard";
 const SingleCourse = () => {
@@ -51,10 +51,6 @@ const SingleCourse = () => {
     uname2,
     uname3,
     uname4,
-    uimg1,
-    uimg2,
-    uimg3,
-    uimg4,
   } = findMatch;
 
   return (
