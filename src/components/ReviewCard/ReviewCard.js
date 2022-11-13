@@ -79,7 +79,7 @@ const findMatch = courseData.find((single) => parseInt(id) === single.id);
       <div className="img-container">
         <img src={image} alt={props.uname2} className="person-img" />
         <span className="quote-icon">
-          <FaQuoteRight />
+        
         </span>
       </div>
       <h4 className="author">{props.uname2}</h4>
@@ -90,7 +90,7 @@ const findMatch = courseData.find((single) => parseInt(id) === single.id);
       <div className="img-container">
         <img src={image} alt={props.uname4} className="person-img" />
         <span className="quote-icon">
-          <FaQuoteRight />
+     
         </span>
       </div>
       <h4 className="author">{props.uname4}</h4>
@@ -101,7 +101,7 @@ const findMatch = courseData.find((single) => parseInt(id) === single.id);
       <div className="img-container">
         <img src={image} alt={props.uname3} className="person-img" />
         <span className="quote-icon">
-          <FaQuoteRight />
+         
         </span>
       </div>
       <h4 className="author">{props.uname3}</h4>
